@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.divAnimationBoxKeeper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 102, 146);
+}
+.divAnimationBoxKeeperDark{
+background-color: rgb(19, 19, 19);
+}
+.divMainAnimationBoxInCallUs {
+    width: 500px;
+    height: 150px;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    animation-name: opacityCallUs;
+    animation-fill-mode: none;
+    animation-duration: 2.5s;
+}
+
+@keyframes opacityCallUs {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.wordC {
+    font-size: 55px;
+    margin-left: 4px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+}
+
+.wordA {
+    margin-left: 4px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+}
+
+.wordL1 {
+    margin-left: 4px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-delay: 0.1s;
+}
+
+.wordL2 {
+    margin-left: 4px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-delay: 0.6s;
+}
+
+.wordU {
+    font-size: 55px;
+    margin-left: 35px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+}
+
+.wordS {
+    margin-left: 4px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-delay: 0.6s;
+}
+
+.wordN {
+    font-size: 55px;
+    margin-left: 35px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-delay: 0.7s;
+}
+
+.wordO {
+    margin-left: 4px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    /* animation-delay: 0.5s; */
+}
+
+.wordW {
+    margin-left: 4px;
+    animation-name: animationaWords;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes animationaWords {
+    0% {
+        margin-top: 40px;
+    }
+
+    100% {
+        margin-top: -40;
+    }
+}
+
+/* -------------------------- */
+.divKeeperBoxesInfoCallUs{
+    background-color: rgb(27, 102, 146);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.divKeeperBoxesInfoCallUsDark{
+    background-color: rgb(19, 19, 19);
+}
+.divMainBoxesInfoCallUs{
+    width: auto;
+    max-width: 425px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.divBoxInformationCallUs{
+    width: 180px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 10px 5px 10px;
+}
+
+.IconInBoxexCallUs{
+    font-size: 35px;
+    color: rgb(50, 163, 158);
+}
+.span1BoxCallUs{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.span2BoxCallUs{
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

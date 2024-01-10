@@ -1,0 +1,22 @@
+
+
+.divMain404{
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh /1.4);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    font-size: 40px;
+    color: rgb(196, 196, 196);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+
+.divMain404Dark{
+    background-color: rgb(17, 17, 17) ;
+    color: rgb(77, 77, 77);
+}
+
+

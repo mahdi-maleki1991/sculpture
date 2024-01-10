@@ -1,0 +1,376 @@
+* {
+    box-sizing: border-box;
+}
+
+.linkTag {
+    height: 100%;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.dicCoverHeaderForAdjust {
+    height: 120px;
+}
+
+.divMainHeader {
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(180deg, #2a4470, #37517e);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+.headerDark {
+    background-image: linear-gradient(180deg, #202020, #111111) !important;
+    border-bottom: 1px solid rgb(27, 27, 27);
+    position: absolute;
+
+}
+
+.divMainHeaderStuky {
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient(180deg, #2a4470e0, #37517ee1);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    top: 10px;
+    z-index: 500;
+    animation-name: aniHeader;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes aniHeader {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.divLogoHeader {
+    width: 110px;
+    min-width: 110px;
+    height: 110px;
+    overflow: hidden;
+    padding: 5px;
+    margin-left: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.082);
+}
+
+.divPropertiesHeader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    align-items: center;
+}
+
+.LogoHeader {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.spanHeaderItems {
+    width: auto;
+    height: 99%;
+    min-width: 60px;
+    color: white;
+    margin: 0px 10px 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    padding: 0px 4px 0px 4px;
+    position: relative;
+}
+
+.spanHeaderItems:hover {
+    color: rgb(224, 221, 255);
+    outline: 1px solid rgba(238, 238, 238, 0.171);
+    text-shadow: 2px 1px 5px rgb(255, 255, 255);
+    transition: color 0.4s, box-shadow 0.1s;
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.329) inset;
+}
+
+.headerItemGetStart {
+    width: 135px;
+    height: 43px;
+    border: 2px solid #47b2e4;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin: 0px 90px 0px 40px;
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerItemGetStart:hover {
+    background-color: #47b2e4;
+    transition: background-color 0.3s;
+}
+
+.divDraverProductHeader {
+    width: 500px;
+    max-width: 500px;
+    height: auto;
+    max-height: 400px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(30deg, #23447ed2, #8b5529ef);
+    z-index: 95;
+    border-radius: 3px;
+    position: absolute;
+    top: 120px;
+    flex-wrap: wrap;
+    padding: 5px;
+    display: none;
+    transition: opacity 1s;
+}
+
+.divDraverProductHeaderDark {
+    background-image: linear-gradient(30deg, #001230d2, #220f00f6) !important;
+    border: 1px solid rgb(105, 105, 105);
+}
+
+.openProductInHeader {
+    display: flex;
+    animation-name: aniOpenProductInHeader;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+}
+
+@keyframes aniOpenProductInHeader {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.divBoxProdocts {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.IMGinHeaderProdutc {
+    width: 100%;
+    height: 100%;
+}
+
+.IMGinHeaderProdutc:hover {
+    filter: blur(7);
+}
+
+.divLineInBox {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(25, 25, 99);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.divBoxProdocts:hover .divLineInBox {
+    opacity: 1;
+    width: 97%;
+    height: 97%;
+    border: 2px solid rgba(9, 15, 71, 0.733);
+    transition: width 0.4s, height 0.4s;
+    border-radius: 4px;
+}
+
+
+
+
+
+/* ***************************Smal Menu************************** */
+
+
+
+.iconHeaderSmallMenu {
+    font-size: 25px;
+    margin-right: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.divMainSlamHeader {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    z-index: 10;
+    background-image: linear-gradient(30deg, #0e254dd2, #663e1eef);
+    position: absolute;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    animation-name: animationSmalMenu;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
+}
+
+.smalHeader {
+    background-image: linear-gradient(30deg, #0e0e0efb, #130700f5) !important;
+}
+
+@keyframes animationSmalMenu {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.divSmallHeaderDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.spanDeatilsInSmalHeader:hover {
+    color: #b4e1ff;
+    text-shadow: 3px 1px 10px rgba(255, 255, 255, 0.664);
+
+}
+
+.spanDeatilsInSmalHeader {
+    color: white;
+    font-size: 16px;
+    padding: 1px 0px 1px 0px;
+}
+
+.divKeepProductsInSmallHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ProductItemInSmallHeader {
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.534);
+    padding-top: 5px;
+}
+
+.divMainNightModeActive {
+    width: 45px;
+    height: 25px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.divMainNightModeDeActive {
+    width: 45px;
+    height: 25px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(231, 231, 231);
+    border-radius: 25px;
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.AnimationNightModeActive {
+    width: 23px;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    background-image: linear-gradient(100deg, rgb(68, 68, 68), rgb(8, 8, 8));
+    border: 1px solid rgb(49, 49, 49);
+    animation-name: aniBTNnightMode;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+.AnimationNightModeDeactive {
+    width: 23px;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    /* right: 20px; */
+    background-image: linear-gradient(100deg, rgb(243, 243, 243), rgb(146, 146, 146));
+    border: 1px solid rgb(196, 196, 196);
+    animation-name: aniBTNnightModeDeactive;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes aniBTNnightMode {
+    0% {
+        right: 0px;
+    }
+
+    100% {
+        right: 20px;
+    }
+}
+
+@keyframes aniBTNnightModeDeactive {
+    0% {
+        right: 20px;
+    }
+
+    100% {
+        right: 0px;
+    }
+}

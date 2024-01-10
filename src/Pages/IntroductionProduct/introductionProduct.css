@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+.ContainerIntroductProduc {
+    background-color: rgb(238, 240, 255);
+}
+
+.ContainerIntroductProducDark {
+    background-color: rgb(17, 17, 17);
+}
+
+.colsInIntroduction {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 5px 10px 10px;
+}
+
+.colsInIntroductionInfo {
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding-top: 100px;
+    color: white;
+}
+
+.IMGMainProductInIntroduction {
+    width: 100%;
+    height: auto;
+    max-height: 498px;
+    border-radius: 5px;
+}
+
+.colsInIntroductionInfo span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.colsInIntroductionInfoDark span {
+    color: rgb(247, 247, 247);
+}
+
+.BtagInIntroductProduce {
+    color: rgb(0, 0, 0);
+}
+
+.BtagInIntroductProduceDark {
+    color: rgb(255, 255, 255) !important;
+}
+
+.spanDestenationInIntPre {
+    margin-top: 10px;
+    margin-right: 80px;
+}
+
+.spanDestenationInIntPre::before {
+    content: '';
+    width: 90%;
+    height: 1px;
+    display: block;
+    background-color: rgb(206, 206, 206);
+}
+
+.divBasketKeeper {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.divBTNinsertToStash {
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(230, 92, 0);
+    background-color: rgb(221, 81, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    padding-right: 22px;
+}
+
+.starUnStarAni {
+    position: absolute;
+    right: 13px;
+
+}
+
+.divBTNinsertToStash:hover .starUnStarAni {
+    animation-name: anistarunstar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes anistarunstar {
+    0% {
+        font-size: 12px;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        font-size: 22px;
+        transform: rotate(360deg);
+    }
+}
+
+.divBTNCallIntoduction {
+    width: 130px;
+    height: 40px;
+    border: 2px solid rgb(8, 109, 47);
+    background-color: rgb(8, 109, 47);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.divBTNCallIntoduction:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 109, 47);
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.iconCallInColIntroduction {
+    margin-left: 10px;
+    animation-name: aniCallBTN;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes aniCallBTN {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}

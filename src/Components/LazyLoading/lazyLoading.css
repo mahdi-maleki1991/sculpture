@@ -1,0 +1,53 @@
+.MainDivLazyLoading {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-size: 30px;
+    display: none;
+    opacity: 0;
+}
+
+.MainDivLazyLoadingDisActive {
+    display: none;
+}
+
+.MainDivLazyLoadingDisActiveSlowly {
+    animation-name: animationLazyLoading;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+@keyframes animationLazyLoading {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+    }
+    
+    100% {
+        height: 0px;
+    }
+}
+
+.MainDivLazyLoadingActiveSlowly {
+    display: flex;
+    opacity: 1;
+}
+
+
+.GIFLazyLoad {
+    width: 300px;
+    height: 300px;
+}

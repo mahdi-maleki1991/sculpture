@@ -1,0 +1,105 @@
+
+*{box-sizing: border-box;}
+body{
+    overflow-x: hidden;
+}
+.ConManager{
+    background-color: rgb(238, 238, 238);
+    font-family:'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+.ConManagerDark{
+    background-color: rgb(17, 17, 17) !important;
+}
+.RowManagerTeaxt{
+    margin-bottom: 20px
+}
+.textHeaderManager1{
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+    padding-top: 10px;
+}
+.textHeaderManager1Dark{
+color: rgb(161, 209, 255);
+}
+.textHeaderManager2{
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 80px 5px 80px;
+}
+.textHeaderManager2Dark{
+    color: white;
+}
+.shadowToMainDivManagerCard{
+    transition:box-shadow 0.5s ;
+    box-shadow: 5px 5px 20px 5px rgb(189, 189, 189);
+}
+.shadowToMainDivManagerCardDisacktive{
+    transition:box-shadow 0.5s ;
+    box-shadow: 0px 0px 0px 0px rgb(189, 189, 189);
+}
+.mainDivColCardManager{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 10px 0px 10px 0px;
+}
+.divIMGManagerCard{
+    width: 200px;
+    padding: 40px 10px 40px 20px;
+}
+.IMGcolManagerCard{
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.divInfoanagerCard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+}
+.h4InCardManager{
+    width: 100%;
+    color: rgb(24, 24, 107);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.divBoxSocialmediaCardManager{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.span1CardManager{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+}
+.span2CardManager{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.iconsInCardManagerMedia{
+    font-size: 20px;
+    width: 33px;
+    height: 33px;
+    color: rgb(24, 24, 114);
+    border-radius: 50%;
+    background-color: rgb(225, 225, 255);
+    padding: 3px;
+}

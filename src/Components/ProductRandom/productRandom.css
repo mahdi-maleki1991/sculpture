@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+.ConProductR {
+    /* border: 1px solid rgb(206, 48, 48); */
+    margin-top: 100px;
+
+}
+
+.ColProductR {
+    height: 300px;
+    padding: 10px 15px 10px 15px;
+    max-width: 330px;
+}
+
+.divMainProductR {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(231, 231, 231);
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.IMGColProductR {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.divInfoOfColProductRHide {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(17, 38, 109);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.3s;
+    opacity: 0.7;
+}
+
+.divInfoOfColProductR {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(17, 38, 109);
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.divSubInfoProductR {
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+.divInfoOfColProductRRight {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.IconProductRInCol {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+/* *********************Show in big Size************************** */
+
+.divMainCortBigSize {
+    height: 100%;
+    position: fixed;
+    z-index: 600;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation-name: animationBigIMGActive;
+    animation-duration: 0.4s;
+    animation-direction: alternate;
+}
+
+@keyframes animationBigIMGActive {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.ColInIMGbigSizeByIMG {
+    height: 100%;
+    padding: 30px;
+}
+
+.ColInIMGbigSizeByInformation {
+    height: 100%;
+}
+
+.IMGinBigSize {
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    max-height: 530px;
+    border-radius: 4px;
+}
+
+.divMainBigIMGinformation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 50px 20px 20px 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.itemSpanInBigIMGInfo {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.952);
+}
+
+.itemSpanInBigIMGInfoPtag {
+    color: rgba(255, 255, 255, 0.973);
+    padding-top: 10px;
+    margin-top: 25px;
+    font-size: 13px;
+    border-top: 1px solid rgba(255, 253, 253, 0.219);
+}
+
+.BtagitemSpanInBigIMGInfoPtag {
+    font-size: 35px;
+    color: rgb(53, 165, 165);
+}
+
+.iconExitBigImage {
+    color: rgb(206, 73, 73);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 0px;
+    transform: rotate(45deg);
+    margin-top: 10px;
+}
+
+/* .closeWindowToShoBigIMG {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.966);
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation-name: animationBigIMGDisActive;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes animationBigIMGDisActive {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+} */

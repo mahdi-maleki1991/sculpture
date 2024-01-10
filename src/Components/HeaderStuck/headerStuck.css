@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+
+.ConHeaderStuck {
+    height: auto;
+    position: relative;
+}
+
+.ColInHeaderStuck {
+    background-color: #37517e;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 400px;
+    overflow: hidden;
+    min-height: 400px;
+}
+.ColInHeaderStuckDark{
+    background-color: rgb(17, 17, 17) !important;
+}
+.divIMGkeeperHeaderStuck {
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid red; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.IMGstatueHeaderStuck {
+    height: 100%;
+    position: absolute;
+    animation-name: aniUpDownHeaderStuck;
+    animation-duration: 1.4s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+
+.H1InHeadStuck {
+    font-weight: 700;
+    color: white;
+
+}
+
+.H5InHeadStuck {
+    font-weight: 700;
+    color: rgba(240, 240, 240, 0.514);
+    margin-top: 10px;
+}
+
+.divGetStartInHeadStuck {
+    width: 150px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: #298bb8;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+}
+
+.divGetStartInHeadStuck:hover {
+    color: rgba(255, 255, 255, 0.959);
+    background-color: #1d76a0;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.divHeadStuchVideoGr {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.divVideoInHeadStuck {
+    color: white;
+    font-weight: 600;
+    margin-left: 35px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.IconVideoHeadStuck {
+    font-size: 35px;
+    margin-right: 6px;
+}
+
+.divVideoInHeadStuck:hover .IconVideoHeadStuck {
+    color: #3d9bc4;
+    transition: color 0.3s;
+}
+
+@keyframes aniUpDownHeaderStuck {
+    0% {
+        top: -5px;
+    }
+
+    100% {
+        top: 10px
+    }
+}
+
+.divVideo {
+    width: 100%;
+    height: 0px;
+    background-color: rgba(29, 29, 29, 0.966);
+    position: fixed;
+    top: -20px;
+    right: 0px;
+    z-index: 2000;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.divVideoActive {
+    height: 1000px;
+    transition: height 1.5s;
+}
+
+.divCloseVideo {
+    width: 100%;
+    text-align: end;
+    padding-right: 50px;
+    margin-top: 25px;
+
+}
+
+
+.iconCloseVideo {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.iconCloseVideo:hover {
+    color: rgb(255, 88, 88);
+}
+.divVideoKeeper {
+    width: 95%;
+    height: auto;
+    max-height: 540px;
+    margin-top: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.mainVideoClip {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}

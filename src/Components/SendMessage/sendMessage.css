@@ -1,0 +1,127 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.divMainSendMassage {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    padding: 5px 0px 20px 0px;
+
+}
+.divMainSendMassageDark{
+    background-color: rgb(19, 19, 19);
+}
+.inputsOfMessage {
+    width: 100%;
+    height: 29px;
+    margin-top: 13px;
+    outline: none;
+    border: none;
+    border: 1px solid rgb(109, 109, 109);
+    padding: 0px 5px 0px 25px;
+    border-radius: 3px;
+}
+
+.inputsOfMessage:focus {
+    border: 1px solid rgba(85, 185, 243, 0.61);
+    outline: 2px solid rgba(146, 215, 255, 0.747);
+}
+
+.textAreaMessage {
+    width: 300px;
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid rgb(150, 150, 150);
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.textAreaMessage:focus {
+    border: 1px solid rgba(85, 185, 243, 0.61);
+    outline: 2px solid rgba(146, 215, 255, 0.747);
+}
+
+.divBTNsendMessage {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(9, 97, 49);
+    border: 1px solid rgb(9, 97, 49);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 4px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.divBTNsendMessage:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(9, 97, 49);
+    transition: background-color 0.4s, color 0.4s;
+}
+.divBTNsendMessageDisactive{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(88, 102, 94);
+    border: 1px solid rgb(65, 80, 71);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(252, 252, 252);
+    border-radius: 4px;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.divInputMessageKeeper {
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 14px;
+}
+
+.IconsInMessageInputs {
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    bottom: 7px;
+    color: rgba(19, 99, 55, 0.842);
+}
+
+/* .divBTNMessageKeeperAndPin {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+} */
+
+/* .inputPinCodeInEmail {
+    width: 95px;
+    height:35px;
+    border: 1px solid rgb(185, 185, 185);
+    outline: none;
+    letter-spacing: 5px;
+    text-align: center;
+    border-radius: 4px;
+
+} */
